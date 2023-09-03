@@ -1,0 +1,24 @@
+[debug] [2023-08-30T01:30:11.883Z] ----------------------------------------------------------------------
+[debug] [2023-08-30T01:30:11.886Z] Command:       C:\Program Files\nodejs\node.exe D:\software\nodejs\node_global\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-08-30T01:30:11.886Z] CLI Version:   12.5.2
+[debug] [2023-08-30T01:30:11.887Z] Platform:      win32
+[debug] [2023-08-30T01:30:11.887Z] Node Version:  v16.18.0
+[debug] [2023-08-30T01:30:11.888Z] Time:          Wed Aug 30 2023 09:30:11 GMT+0800 (中国标准时间)
+[debug] [2023-08-30T01:30:11.888Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-30T01:30:11.943Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-30T01:30:11.943Z] > authorizing via signed-in user (zhengjie5389@gmail.com)
+[debug] [2023-08-30T01:30:11.943Z] [iam] checking project threejs-3718e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-30T01:30:11.944Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/threejs-3718e:testIamPermissions [none]
+[debug] [2023-08-30T01:30:11.945Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/threejs-3718e:testIamPermissions x-goog-quota-user=projects/threejs-3718e
+[debug] [2023-08-30T01:30:11.945Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/threejs-3718e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-30T01:30:33.044Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/threejs-3718e:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasehosting.sites.update\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/threejs-3718e:testIamPermissions failed, reason: connect ETIMEDOUT 172.217.163.42:443
+[debug] [2023-08-30T01:30:33.046Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/threejs-3718e:testIamPermissions
+[debug] [2023-08-30T01:30:33.049Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/threejs-3718e [none]
+[debug] [2023-08-30T01:30:54.102Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/threejs-3718e, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/threejs-3718e failed, reason: connect ETIMEDOUT 172.217.160.74:443
+[debug] [2023-08-30T01:30:54.102Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/threejs-3718e (original: request to https://firebase.googleapis.com/v1beta1/projects/threejs-3718e failed, reason: connect ETIMEDOUT 172.217.160.74:443)
+[debug] [2023-08-30T01:30:54.253Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/threejs-3718e
+    at RetryOperation._fn (D:\software\nodejs\node_global\node_modules\firebase-tools\lib\apiv2.js:239:31)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project threejs-3718e. Please make sure the project exists and your account has permission to access it.
