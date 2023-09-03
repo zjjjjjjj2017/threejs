@@ -8,6 +8,7 @@ import ViteComponents, {
 } from "unplugin-vue-components/resolvers";
 
 export default {
+  publicPath: './',
   plugins: [
     /* ... */
     vue(),
