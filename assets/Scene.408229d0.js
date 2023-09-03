@@ -1,0 +1,1 @@
+import{B as s}from"./Base3d.0caabbf3.js";import{r as a,x as c,o,c as t}from"./vendor.9182a9ef.js";const n={class:"scene",id:"scene"},f={setup(r){const e=a({base3d:{}});return c(()=>{e.base3d=new s("#scene")}),(d,_)=>(o(),t("div",n))}};export{f as default};
